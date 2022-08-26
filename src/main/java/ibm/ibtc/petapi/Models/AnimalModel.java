@@ -17,6 +17,8 @@ public class AnimalModel {
     private String name;
     private Integer age;
     private Double weight;
+    private LocalDateTime createdAt;
+    private LocalDateTime updatedAt;
 
     @OneToOne
     @JoinColumn (name = "customerid")

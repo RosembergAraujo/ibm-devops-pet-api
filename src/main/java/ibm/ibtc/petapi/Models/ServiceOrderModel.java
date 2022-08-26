@@ -17,6 +17,9 @@ public class ServiceOrderModel {
     private LocalDateTime entryAt;
     private LocalDateTime exitAt;
 
+    private LocalDateTime createdAt;
+    private LocalDateTime updatedAt;
+
     @OneToOne
     @JoinColumn(name = "customerid")
     private CustomerModel customer;

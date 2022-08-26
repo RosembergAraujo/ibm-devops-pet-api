@@ -16,4 +16,6 @@ public class CustomerModel {
 
     private String name;
     private String tel;
+    private LocalDateTime createdAt;
+    private LocalDateTime updatedAt;
 }
