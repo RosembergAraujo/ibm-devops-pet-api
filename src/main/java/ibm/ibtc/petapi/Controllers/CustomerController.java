@@ -86,6 +86,8 @@ public class CustomerController {
             if (req.get("name") != null) customer.setName((String) req.get("name"));
             if (req.get("email") != null) customer.setTel((String) req.get("tel"));
 
+            customer.setUpdatedAt(LocalDateTime.now());
+
             _customerRepository.save(customer);
 
             return ResponseEntity.status(HttpStatus.ACCEPTED).body(new Object() {
