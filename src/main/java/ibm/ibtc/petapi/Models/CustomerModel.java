@@ -1,4 +1,4 @@
-package ibm.ibtc.petapi.Controllers;
+package ibm.ibtc.petapi.Models;
 
 import lombok.Data;
 
@@ -16,6 +16,4 @@ public class CustomerModel {
 
     private String name;
     private String tel;
-
-    private LocalDateTime createdAt;
 }
