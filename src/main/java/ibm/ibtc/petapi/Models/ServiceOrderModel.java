@@ -20,7 +20,7 @@ public class ServiceOrderModel {
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
 
-    @OneToOne
+    @ManyToOne
     @JoinColumn(name = "customerid")
     private CustomerModel customer;
 }
